@@ -1,0 +1,30 @@
+/*
+ * Configuration Options for Detector
+ * If config.ini doesn't exist Detector will attempt to read in config.ini.default
+ * and write out the config.ini file.
+ */
+
+// if we should run in debug mode. only useful if we want to view the site populated
+// w/ other Detector profiles
+debug                   = false
+
+// version number so that extended profiles can be rebuilt if necessary
+extendedVersion         = "1.0"
+
+// where to find the features.js.php file from the web
+featuresScriptWebPath   = "/js/";
+
+// what is the default family name
+defaultFamily           = "mobile-basic"
+
+// allow family switching via request variable
+switchFamily            = false
+
+// allow splits in family names for partial fallback
+splitFamily             = false
+
+// do we show a default family for those browsers that don't support JavaScript, by default NO
+noJSCookieFamilySupport = false
+noJSSearchFamily        = "desktop"
+noJSDefaultFamily       = "mobile-basic"
+noCookieFamily          = "desktop"
